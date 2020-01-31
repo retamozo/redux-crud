@@ -1,5 +1,5 @@
 import React from "react";
-import FormNewProduct from "./FormNewProduct";
+import ProductForm from "../ProductForm";
 
 const NewProduct = () => {
   return (
@@ -7,10 +7,10 @@ const NewProduct = () => {
       <div className="col-md-8">
         <div className="card">
           <div className="card-body">
-            <h2 className="text-center mb-4 font-weight-bold">
-              Add new product
-            </h2>
-            <FormNewProduct />
+            <ProductForm
+              title="Create a new Product"
+              buttonActiionTitle="Add product"
+            />
           </div>
         </div>
       </div>

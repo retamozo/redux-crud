@@ -1,11 +1,8 @@
-import React from 'react';
+import React from "react";
+import ProductForm from "../ProductForm";
 
 const EditProduct = () => {
-    return (
-        <div>
-            from edit products
-        </div>
-    );
+  return <ProductForm title="Edit product" buttonActiionTitle="Edit product" />;
 };
 
 export default EditProduct;
