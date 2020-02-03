@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addProduct } from "../../redux/actions/actions";
+import { createNewProduct } from "../../redux/actions/actions";
 
 const FormProduct = ({ title, buttonActiionTitle, buttonCallback }) => {
   const [productName, setProductName] = useState("");
   const [productPrice, setProductPrice] = useState("");
 
   const dispatch = useDispatch();
-  const addNewProduct = product => dispatch(addProduct(product));
+  const addNewProduct = product => dispatch(createNewProduct(product));
 
   const handleSubmit = e => {
     e.preventDefault();
